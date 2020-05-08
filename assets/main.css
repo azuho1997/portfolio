@@ -1,0 +1,13 @@
+.test-enter{
+    /* 現れる時の最初の状態 */
+    opacity: 0;
+  }
+  .test-enter-active{
+    /* 現れる最中の状態 */
+    transition: opacity 5s;
+  }
+  .test-enter-to{
+    /* 現れた時の最後の状態 */
+    opacity: 1;
+  }
+  
