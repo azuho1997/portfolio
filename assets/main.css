@@ -4,7 +4,7 @@
   }
   .test-enter-active{
     /* 現れる最中の状態 */
-    transition: opacity 5s;
+    transition: opacity 3s;
   }
   .test-enter-to{
     /* 現れた時の最後の状態 */

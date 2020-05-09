@@ -68,7 +68,7 @@ export default {
       aboutFlg: false,
       worksFlg: false,
       skillsFlg: false,
-      postsFlg: false
+      postsFlg: false,
     }
     
   },
@@ -107,7 +107,7 @@ export default {
       this.worksFlg = false
       this.skillsFlg = false
       this.postsFlg = !this.postsFlg
-    }
+    },
   },
   transition: "test"
 };
@@ -123,23 +123,27 @@ export default {
 }
 
 header{
-  border-bottom: solid 6px rgb(247, 249, 250);
   text-align: center;
   padding: 3%;
-  /* background-image: url("~@/assets/ver2.jpg"); */
   background-size: cover;
   transition: opacity 0.24s ease-in;
-  opacity: 0.5;
-}
-
-
-.header{
+  opacity: 0.5; 
   color: rgb(158, 17, 121);
   font-size: 300%;
   font-weight: 500;
   letter-spacing: .7em;
   -webkit-text-stroke: 1px #000;
+
 }
+
+
+/* .header{
+  color: rgb(158, 17, 121);
+  font-size: 300%;
+  font-weight: 500;
+  letter-spacing: .7em;
+  -webkit-text-stroke: 1px #000;
+  } */
 
 .buttons{
   height: 75vh;
@@ -227,6 +231,13 @@ footer{
   opacity: 0;
 } */
 
-
+font-awesome-icon {
+  border-radius: 50%;
+  transition: all 0.6s ease 0s;
+}
+font-awesome-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
 </style>
 

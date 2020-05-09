@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="all">
     <div class="title">
       About
       <font-awesome-icon icon="book-open" />
@@ -20,4 +20,8 @@
   padding-bottom: 2%;
   color: rgb(72, 76, 80);
 }
+
+/* .all{
+  height: 1000%;
+} */
 </style>
