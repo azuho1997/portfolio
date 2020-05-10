@@ -1,28 +1,40 @@
 <template>
 <div>
 <div class="all">
+  <Snowf
+  :amount="50"
+  :size="5"
+  :speed="1.5"
+  :wind="0"
+  :opacity="0.8"
+  :swing="1"
+  :image="null"
+  :zIndex="null"
+  :resize="true"
+  color="#fff"
+/>
   <header><p class="header">PORTFOLIO</p></header>
   <div class="buttons">
     <nav>
       <div class="button">
         <div class="buttonName" @click="buttonTop">TOP</div>
-          <toggle-button color="rgb(212, 158, 198)" @change="buttonTop" :value="topFlg" :sync="true" height="40" width="84"></toggle-button>
+          <toggle-button color="rgb(126, 190, 190)" @change="buttonTop" :value="topFlg" :sync="true" height="40" width="84"></toggle-button>
       </div><br>
       <div class="button">
         <div class="buttonName" @click="buttonAbout">ABOUT</div>
-          <toggle-button color="rgb(212, 158, 198)" @change="buttonAbout" :value="aboutFlg" :sync="true" height="40" width="84"></toggle-button>
+          <toggle-button color="rgb(126, 190, 190)" @change="buttonAbout" :value="aboutFlg" :sync="true" height="40" width="84"></toggle-button>
       </div><br>
       <div class="button">
         <div class="buttonName" @click="buttonWorks">WORKS</div>
-          <toggle-button color="rgb(212, 158, 198)" @change="buttonWorks" :value="worksFlg" :sync="true" height="40" width="84"></toggle-button>
+          <toggle-button color="rgb(126, 190, 190)" @change="buttonWorks" :value="worksFlg" :sync="true" height="40" width="84"></toggle-button>
       </div><br>
       <div class="button">
         <div class="buttonName" @click="buttonSkills">SKILLS</div>
-          <toggle-button color="rgb(212, 158, 198)" @change="buttonSkills" :value="skillsFlg" :sync="true" height="40" width="84"></toggle-button>
+          <toggle-button color="rgb(126, 190, 190)" @change="buttonSkills" :value="skillsFlg" :sync="true" height="40" width="84"></toggle-button>
       </div><br>
       <div class="button">
         <div class="buttonName" @click="buttonPosts">POSTS</div>
-          <toggle-button color="rgb(212, 158, 198)" @change="buttonPosts" :value="postsFlg" :sync="true" height="40" width="84"></toggle-button>
+          <toggle-button color="rgb(126, 190, 190)" @change="buttonPosts" :value="postsFlg" :sync="true" height="40" width="84"></toggle-button>
       </div>
     </nav>
       <div class="detail">
@@ -53,6 +65,8 @@ import about from "~/components/about.vue";
 import works from "~/components/works.vue";
 import skills from "~/components/skills.vue";
 import posts from "~/components/posts.vue";
+import Snowf from 'vue-snowf';
+
 
 export default {
   components: {
@@ -60,7 +74,8 @@ export default {
     about,
     works,
     skills,
-    posts
+    posts,
+    Snowf
   },
   data: function(){
     return{
@@ -128,22 +143,14 @@ header{
   background-size: cover;
   transition: opacity 0.24s ease-in;
   opacity: 0.5; 
-  color: rgb(158, 17, 121);
-  font-size: 300%;
-  font-weight: 500;
-  letter-spacing: .7em;
-  -webkit-text-stroke: 1px #000;
+  color: #FFF;
+  font-size: 350%;
+  font-weight: 1000;
+  letter-spacing: .4em;
+  -webkit-text-stroke: 3px rgb(45, 119, 119);
 
 }
 
-
-/* .header{
-  color: rgb(158, 17, 121);
-  font-size: 300%;
-  font-weight: 500;
-  letter-spacing: .7em;
-  -webkit-text-stroke: 1px #000;
-  } */
 
 .buttons{
   height: 75vh;
@@ -178,7 +185,7 @@ nav{
 
 .detail{
   height: 80vh;
-  background-color: rgb(223, 146, 203);
+  background-color: rgb(126, 190, 190);
   height: 75vh;
   width: 90%;
   padding: 3% 10% 10% 10%;

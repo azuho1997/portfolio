@@ -41,11 +41,13 @@ export default {
   }
 }
 .item {
+  color: #FFF;
+  -webkit-text-stroke: 3px rgb(126, 190, 190);
   display: inline-block;
   min-width: 0.3em;
   font-size: 2rem;
   animation: text-in 4s cubic-bezier(0.22, 0.15, 0.25, 1.43) 0s backwards;
-    animation-iteration-count: infinite; /*繰り返し回*/
+  animation-iteration-count: infinite; /*繰り返し回*/
 
 }
 
@@ -67,17 +69,17 @@ export default {
   width: 10%;
   height: 2.2em;
   position: absolute;
-  color: rgb(182, 149, 176);
+  color: rgb(126, 190, 190);
   text-decoration: none;
   transition: .4s;
-  border: 2px solid rgb(182, 149, 176);
+  border: 2px solid rgb(126, 190, 190);
   border-radius: 4px;
 }
 
 .button:hover {
   /* opacity: 0.5; */
-  background-color: rgb(182, 149, 176);
-  border-color: rgb(182, 149, 176);
+  background-color: rgb(126, 190, 190);
+  border-color: rgb(126, 190, 190);
   color: #FFF;
 }
 
@@ -91,6 +93,7 @@ export default {
   width: 100%;
   height: 45%;
   position: absolute;
+  
 }
 
 

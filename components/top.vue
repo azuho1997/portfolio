@@ -1,26 +1,38 @@
 <template>
   <div>
-    <transition>
-      <div class="title">Welcome to my portforio</div>
-    </transition>
-    <!-- <div class="title">
-      Top
-      <font-awesome-icon icon="book" />
+    <div class="boder">
+        <span class="title">
+          <div>Welcome</div>
+          <br>
+          <div>to my</div> 
+          <br>  
+          <div>portforio</div>
+        </span>
     </div>
-    <div class="detailsentence">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo magnam ducimus cumque similique dolorem exercitationem at praesentium quos voluptatibus!
-      Ut earum at provident minus reiciendis atque doloribus ipsum temporibus.
-    </div> -->
   </div>
 </template>
 
 <style scoped>
+.boder {
+  border: solid 6px aliceblue;
+  color: rgb(72, 76, 80);  
+  margin-top: 2%;
+  padding: 10% 1% 10% 4%;
+  height: 55vh;
+}
+
+
 .title {
   font-size: 180%;
-  border-bottom: solid 6px aliceblue;
-  padding-left: 8%;
-  margin-bottom: 4%;
-  padding-bottom: 2%;
-  color: rgb(72, 76, 80);
+  z-index: 1;
+  color: #fff;
+  line-height: 2rem; 
+  letter-spacing: 0.15em;
+  animation: text-fade 2s infinite linear; 
+  line-height: 2rem;
+  margin-top: 10%;
 }
+
+
+
 </style>
