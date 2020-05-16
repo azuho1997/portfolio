@@ -50,11 +50,6 @@
       </div>
   </div>
   <footer>
-    <a class="link" href="https://github.com/ohuzak-1997/portfolio">
-      <span class="fas fa-heart fa-4x" style="color: rgb(45, 119, 119)">
-        <font-awesome-icon :icon="['fab','github']" />
-        </span>
-    </a>
     PORTFOLIO
   </footer>
 </div>
