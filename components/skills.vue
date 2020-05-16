@@ -33,10 +33,10 @@
 
 .logos{
   margin-top: 10%;
-  margin-left: 10%;
+  margin-left: 7%;
 }
 img{
-  margin-right: 5%;
+  margin-right: 3%;
 }
 </style>
 
