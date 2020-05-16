@@ -4,10 +4,13 @@
         About
         <font-awesome-icon icon="book-open" />
       </div>
-      <div>name : azuho</div>
-      <div>age : 22</div>
-      <div>university : Bnkyougakuin university</div>
-      <div>mail : </div>
+      <div class="detail">
+      <div>name   :   azuho</div>
+      <div>age   :   22</div>
+      <div>university   :   Bnkyougakuin university</div>
+      <div>mail   :   ohuzak1997@gmail.com</div>
+      <div>github   :   https://github.com/azuho1997</div>
+      </div>
   </div>
 </template>
 
@@ -29,5 +32,7 @@
   margin-bottom: 4%;
   padding-bottom: 2%;
 }
+
+
 
 </style>

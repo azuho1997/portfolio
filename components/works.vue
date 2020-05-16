@@ -7,8 +7,8 @@
       <div class="letter">
         <div class="git"> 
           This site
-          <a class="link" href="https://github.com/ohuzak-1997/portfolio">
-              <span class="fas fa-heart fa-2x" style="color: rgb(45, 119, 119)">
+          <a class="link" xhref="https://github.com/azuho1997/portfolio">
+              <span class="fas fa-heart fa-2x" style="color: white">
                 <font-awesome-icon :icon="['fab','github']" />
               </span>
           </a>
@@ -52,5 +52,6 @@ img{
 .photo{
   text-align: center;
 }
+
 
 </style>
