@@ -5,8 +5,7 @@
       <font-awesome-icon icon="newspaper" />
     </div>
     <div>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo magnam ducimus cumque similique dolorem exercitationem at praesentium quos voluptatibus!
-      Ut earum at provident minus reiciendis atque doloribus ipsum temporibus.
+      これから書きます！
     </div>
   </div>
 </template>

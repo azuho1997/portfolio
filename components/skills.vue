@@ -4,10 +4,14 @@
       Skills
       <font-awesome-icon icon="tools" />
     </div>
-    <div>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo magnam ducimus cumque similique dolorem exercitationem at praesentium quos voluptatibus!
-      Ut earum at provident minus reiciendis atque doloribus ipsum temporibus.
-    </div>
+      <div class="logos">
+        <img src="~/assets/css-3.svg" width="100px" height="100px">
+        <img src="~/assets/html-5.svg" width="100px" height="100px">
+        <img src="~/assets/vue.svg" width="100px" height="100px">
+        <img src="~/assets/javascript.svg" width="100px" height="100px">
+        <img src="~/assets/php.svg" width="100px" height="100px">
+        <img src="~/assets/c-plusplus.svg" width="100px" height="100px">
+      </div>
   </div>
 </template>
 
@@ -25,6 +29,14 @@
   padding-left: 8%;
   margin-bottom: 4%;
   padding-bottom: 2%;
+}
+
+.logos{
+  margin-top: 10%;
+  margin-left: 10%;
+}
+img{
+  margin-right: 5%;
 }
 </style>
 

@@ -14,19 +14,20 @@
 <style scoped>
 .boder {
   border: solid 6px aliceblue;
-  color:#FFF;
   margin-top: 2%;
   padding: 1% 1% 10% 4%; 
   height: 55vh;
+  color: #ffffff;
+
 }
 
 .title {
   font-size: 180%;
   border-bottom: solid 6px aliceblue;
+  border-radius: 2px;
   padding-left: 8%;
   margin-bottom: 4%;
   padding-bottom: 2%;
-  color:#FFF;
 }
 
 </style>

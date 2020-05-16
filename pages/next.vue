@@ -13,7 +13,9 @@
   :resize="true"
   color="#fff"
 />
-  <header><p class="header">PORTFOLIO</p></header>
+  <header>
+    <p class="header">PORTFOLIO</p>
+  </header>
   <div class="buttons">
     <nav>
       <div class="button">
@@ -49,7 +51,7 @@
   </div>
   <footer>
     <a class="link" href="https://github.com/ohuzak-1997/portfolio">
-      <span class="fas fa-heart fa-4x" style="color: purple">
+      <span class="fas fa-heart fa-4x" style="color: rgb(45, 119, 119)">
         <font-awesome-icon :icon="['fab','github']" />
         </span>
     </a>
@@ -66,6 +68,9 @@ import works from "~/components/works.vue";
 import skills from "~/components/skills.vue";
 import posts from "~/components/posts.vue";
 import Snowf from 'vue-snowf';
+import { VueTyper } from 'vue-typer';
+
+
 
 
 export default {
@@ -75,7 +80,9 @@ export default {
     works,
     skills,
     posts,
-    Snowf
+    Snowf,
+    VueTyper
+    
   },
   data: function(){
     return{
@@ -143,7 +150,7 @@ header{
   background-size: cover;
   transition: opacity 0.24s ease-in;
   opacity: 0.5; 
-  color: #FFF;
+  color: rgb(208, 212, 216);
   font-size: 350%;
   font-weight: 1000;
   letter-spacing: .4em;
