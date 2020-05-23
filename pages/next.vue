@@ -15,7 +15,7 @@
       />
       <header>
         <p class="header">PORTFOLIO</p>
-        <a class="menuButton" id="menuButton" @click="openMenu">
+        <a class="menuButton" id="menuButton" @click="menu">
           <div></div>
           <div></div>
           <div></div>
@@ -94,7 +94,7 @@
         </div>
       </div>
       <footer>
-        <a class="link" href="https://github.com/ohuzak-1997/portfolio">
+        <a class="link" href="https://github.com/azuho1997/portfolio">
           <span class="fas fa-heart fa-4x" style="color: rgb(45, 119, 119)">
             <font-awesome-icon :icon="['fab','github']" />
           </span>
@@ -166,6 +166,9 @@ export default {
       this.worksFlg = false;
       this.skillsFlg = false;
       this.postsFlg = !this.postsFlg;
+    },
+    menu: function(){
+      
     }
   },
   transition: "test"
@@ -288,6 +291,7 @@ font-awesome-icon:hover {
     opacity: 0;
   }
   .detail {
+    margin-top: 20px;
     width: 100%;
   }
 
