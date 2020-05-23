@@ -3,10 +3,8 @@
     <div class="bg"></div>
       <div class="title">
     <span v-for="(t, index) in text" :key="index" class="item" :style="{animationDelay: index*100+'ms'}" v-text="t"/>          
-      <!-- AZUHO'S PORTFOLIO -->
       </div>
     <div class="container">
-      <!-- <div class="bg"></div> -->
       <router-link to="/next" class="button">
         OPEN
       </router-link>
@@ -15,14 +13,6 @@
 </template>
 
 <script>
-// export default {
-//   components: {},
-//     mounted () {
-//     setTimeout(this.$router.push("next"), 3000);
-//     },
-//     transition: "test",
-//     methods: {}
-// };
 
 export default {
   data() {
@@ -47,7 +37,6 @@ export default {
   min-width: 0.3em;
   font-size: 2rem;
   animation: text-in 4s cubic-bezier(0.22, 0.15, 0.25, 1.43) 0s backwards;
-  animation-iteration-count: infinite; /*繰り返し回*/
 
 }
 
@@ -65,7 +54,6 @@ export default {
   top: 60%;
   text-align: center;
   letter-spacing: 0.2em;
-  /* transition: opacity 0.24s ease-in; */
   width: 10%;
   height: 2.2em;
   position: absolute;
@@ -77,7 +65,6 @@ export default {
 }
 
 .button:hover {
-  /* opacity: 0.5; */
   background-color: rgb(126, 190, 190);
   border-color: rgb(126, 190, 190);
   color: #FFF;
@@ -85,7 +72,6 @@ export default {
 
 .title {
   font-size: 180%;
-  /* border-bottom: solid 20px rgb(182, 149, 176); */
   text-align: center;
   padding: 17%;
   letter-spacing: 0.9em;
@@ -96,22 +82,17 @@ export default {
   
 }
 
+@media screen and (max-width: 768px){
 
+.title{
+  font-size: 90%;
+  padding: 27%;
 
+}
 
-/* .bg {
-  /*位置の設定*/
-  /* width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0; */
-
-  /*背景画像の設定*/
-  /* background-image: url("~@/assets/ver2.jpg");
-  background-size: cover; */
-
-  /*透過の設定*/
-  /* opacity: 0.5;
-} */ 
+.button{
+  padding: 10px 90px 40px 20px;
+} 
+}
+ 
 </style>
